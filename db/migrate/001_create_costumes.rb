@@ -1,15 +1,13 @@
 class CreateCostumes < ActiveRecord::Migration
-
   def change
-    create_table :costumes do |c|
-      c.string :name
-      c.float :price
-      c.string :size
-      c.text :image_url
-      c.timestamps
+    create_table :costumes do |t|
+      t.string :name
+      t.float :price
+      t.string :image_url
+      t.string :size
+      t.timestamps
     end
   end
-
 end
 
 # By convention, the class name should match the part of the
