@@ -1,4 +1,4 @@
-class CreateCostumes < ActiveRecord::Migration[5.1]
+class CreateCostumes < ActiveRecord::Migration
 
   def change
     create_table :costumes do |c|
@@ -6,6 +6,7 @@ class CreateCostumes < ActiveRecord::Migration[5.1]
       c.float :price
       c.string :size
       c.text :image_url
+      c.timestamps
     end
   end
 
